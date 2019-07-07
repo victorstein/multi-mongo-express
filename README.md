@@ -42,7 +42,7 @@ JavaScript Standard
 |DB_PASSWORD_2  |string| Password of second connectiont | password
 |DB_URI_2  |string| Password of first connection | ```@```cluster0-xxxxx.mongodb.net/```Example```?retryWrites=true&w=majority
 
-:tw-1f605: Or just look at the example env of the project :tw-1f605:
+🙄 Or just look at the example env of the project 🙄
 
 * Finally, just run ```npm run dev``` for development, or ```npm run build``` for webpack, or ```npm start``` (once built) to run production
 
