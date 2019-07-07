@@ -4,7 +4,7 @@
 
 This is a boilerplate project to quickly create an express server that has multiple mongo connections and models that respond to such connections only.
 
-### Coding style
+## Coding style
 
 ![GitHub last commit](https://img.shields.io/badge/STYLE-JAVASCRIPT%20STANDARD-yellow.svg?style=for-the-badge&logo=javascript)
 
@@ -17,6 +17,34 @@ JavaScript Standard
 * [JOI](https://mongoosejs.com/) As data validator
 * [webpack](https://webpack.js.org/) For bundling and development purposes
 * [Babel](https://webpack.js.org/) For polyfilling and ES support
+
+## Installation
+
+* Clone the repo
+	```git clone https://github.com/victorstein/multi-mongo-express.git```
+
+* Enter the repo directory
+	```cd multi-mongo-express```
+
+* Install the dependencies
+	```npm install```
+
+* Create a .env file with the following set up
+
+| KEY | TYPE | DESCRIPTION | VALUE
+| ------ | ------ | ------ | -------------
+|NODE_ENV |string| Database host | development
+|PORT  |string| Connection port | 4000
+|DB_USER_1  |string| Username of first connection | user
+|DB_PASSWORD_1  | string | Password of first connection | password
+|DB_URI_1 | string | URI of first connection | ```@```cluster0-xxxxx.mongodb.net/```Example```?retryWrites=true&w=majority
+|DB_USER_2  |string| Username of second connection | user
+|DB_PASSWORD_2  |string| Password of second connectiont | password
+|DB_URI_2  |string| Password of first connection | ```@```cluster0-xxxxx.mongodb.net/```Example```?retryWrites=true&w=majority
+
+:tw-1f605: Or just look at the example env of the project :tw-1f605:
+
+* Finally, just run ```npm run dev``` for development, or ```npm run build``` for webpack, or ```npm start``` (once built) to run production
 
 ## Contributing
 
